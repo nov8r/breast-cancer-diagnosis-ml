@@ -1,11 +1,11 @@
 Breast Cancer Diagnosis Machine Learning Model
 ==============================================
 
-This project involved developing a machine learning model to predict whether cancer is malignant or benign based on physical characteristics. The dataset used in this project contain various features that describe the characteristics of cell nuclei present in the digitized images of a fine needle aspirate (FNA) of a breast mass.
+This project involved developing a machine learning model to predict whether cancer is malignant or benign based on physical characteristics. The dataset used in this project contains various features that describe the characteristics of cell nuclei present in the digitized images of a fine needle aspirate (FNA) of a breast mass.
 
 Introduction
 ------------
-The primary objective of this project is to classify cancer as either malignant or benign based on various features obtained from digitized images of FNA of breast masses. The data comes from the Breast Cancer Wisconsin dataset. This dataset was obtained from UCI Machine Learning on Kaggle and containes 569 instances of different breast cancer cases.
+The primary objective of this project is to classify cancer as either malignant or benign based on various features obtained from digitized images of FNA of breast masses. The data comes from the Breast Cancer Wisconsin dataset. This dataset was obtained from UCI Machine Learning on Kaggle and contains 569 instances of different breast cancer cases.
 
 Data Preprocessing
 ------------------
@@ -22,11 +22,19 @@ To understand the data distribution and characteristics, histograms and boxplots
 ### Histograms
 Histograms are used to display the distribution of each feature in the dataset.
 
+![alt text](https://github.com/nov8r/FP/blob/main/hist.png "Distribution Histogram")
+
 ### Boxplots
 Boxplots help in indentifying the presence of outliers in the dataset.
 
+![alt text](https://github.com/nov8r/FP/blob/main/box.png "Boxplot")
+
+When it comes to machine learning, you would usually remove outliers from your data so as not to skew it too much especially if your boxplots look anything like mine. That said, I did not remove outliers because, in the context of this data, you don't want to miss outliers. You want to be still able to identify those that are out of the average range of the rest of the data.
+
 ### Correlation Heatmap
 A correlation heatmap is generated to show the correlation between different features.
+
+![alt text](https://github.com/nov8r/FP/blob/main/correlationheat.png "Correlation Heatmap")
 
 Model Training and Evaluation
 =============================
@@ -38,8 +46,25 @@ The following machine learning models are trained and evaluated:
   5. K-Nearest Neighbors (KNN)
   6. Neural Network (MLP Classifier)
 
-Each model is tuned using GridSearchCV from the Scikit-Learn python module to find the best hyperparameters. The models are evaluated using k-fold cross-validation (Stratified K-Fold) and the following metrics are measured:
+Each model is tuned using GridSearchCV from the Scikit-Learn Python module to find the best hyperparameters. The models are evaluated using k-fold cross-validation (Stratified K-Fold) and the following metrics are measured:
   - Accuracy
   - F1 Score
   - Precision
   - Recall
+
+Results
+-------
+The performance of each model is summarized in the table below:
+| Model                        | Accuracy | fScore | Precision | Recall |
+| ---------------------------- | -------: | -----: | --------: | -----: |
+| Neural Network               | 0.97     | 0.95   | 1.00      | 0.91   |
+| Support Vector Machine (SVM) | 1.00     | 1.00   | 1.00      | 1.00   |
+| K-Nearest Neighbors (KNN)    | 0.93     | 0.90   | 1.00      | 0.82   |
+| Decision Tree                | 0.86     | 0.78   | 1.00      | 0.64   |
+| Random Forest                | 0.90     | 0.84   | 1.00      | 0.73   |
+| Logistic Regression          | 0.97     | 0.95   | 1.00      | 0.91   |
+
+Conclusion
+==========
+As you can see by looking at my results, this project is far from perfect. For example, if you look at the SVM model, my results show that it worked perfectly. While this is possible, it's highly improbable. This is the first big project I've ever completed regarding machine learning, so I missed something along the way that skewed my data. You may also notice that it says I have perfect precision for each model which is also improbable. For the most part though, when compared to other projects and papers the numbers are fairly similar. Overall, even with it's flaws, I feel pretty good about this project since it was my first big project. I will continue to work on this project to hopefully solve the SVM and precision issue.
+
