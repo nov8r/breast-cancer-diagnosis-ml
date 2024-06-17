@@ -66,5 +66,7 @@ The performance of each model is summarized in the table below:
 
 Conclusion
 ==========
-As you can see by looking at my results, this project is far from perfect. For example, if you look at the SVM model, my results show that it worked perfectly. While this is possible, it's highly improbable. This is the first big project I've ever completed regarding machine learning, so I missed something along the way that skewed my data. You may also notice that it says I have perfect precision for each model which is also improbable. For the most part though, when compared to other projects and papers the numbers are fairly similar. Overall, even with it's flaws, I feel pretty good about this project since it was my first big project. I will continue to work on this project to hopefully solve the SVM and precision issue.
+This project is my first significant deep dive into machine learning and while the results are promising, there are certainly areas to improve on. For instance, the results from the SVM model suggest perfect performance in prediction which is highly unlikely. Additionally, the precision scores provided are also seemingly perfect, indicating that there may be an issue in the evaluation process or data handling.
+
+Despite these flaws, the overall performance of the models is comparable to those found in other projects and academic papers which is encouraging. I will continue working on this project to hopefully resolve the flaws detailed earlier.
 
