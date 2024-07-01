@@ -25,9 +25,9 @@ Histograms are used to display the distribution of each feature in the dataset.
 ![alt text](https://github.com/nov8r/FP/blob/main/histogram.png "Distribution Histogram")
 
 ### Boxplots
-Boxplots help in indentifying the presence of outliers in the dataset.
+Boxplots help in identifying the presence of outliers in the dataset.
 
-![alt text](https://github.com/nov8r/FP/blob/main/box.png "Boxplot")
+![alt text](https://github.com/nov8r/FP/blob/main/boxplot.png "Boxplot")
 
 When it comes to machine learning, you would usually remove outliers from your data so as not to skew it too much especially if your boxplots look anything like mine. That said, I did not remove outliers because, in the context of this data, you don't want to miss outliers. You want to be still able to identify those that are out of the average range of the rest of the data.
 
