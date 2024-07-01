@@ -22,7 +22,7 @@ To understand the data distribution and characteristics, histograms and boxplots
 ### Histograms
 Histograms are used to display the distribution of each feature in the dataset.
 
-![alt text](https://github.com/nov8r/FP/blob/main/hist.png "Distribution Histogram")
+![alt text](https://github.com/nov8r/FP/blob/main/histogram.png "Distribution Histogram")
 
 ### Boxplots
 Boxplots help in indentifying the presence of outliers in the dataset.
@@ -34,7 +34,7 @@ When it comes to machine learning, you would usually remove outliers from your d
 ### Correlation Heatmap
 A correlation heatmap is generated to show the correlation between different features.
 
-![alt text](https://github.com/nov8r/FP/blob/main/correlationheat.png "Correlation Heatmap")
+![alt text](https://github.com/nov8r/FP/blob/main/correlation_heatmap.png "Correlation Heatmap")
 
 Model Training and Evaluation
 =============================
