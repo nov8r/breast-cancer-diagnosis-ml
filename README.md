@@ -55,14 +55,14 @@ Each model is tuned using GridSearchCV from the Scikit-Learn Python module to fi
 Results
 -------
 The performance of each model is summarized in the table below:
-| Model                        | Accuracy | fScore | Precision | Recall |
-| ---------------------------- | -------: | -----: | --------: | -----: |
-| Neural Network               | 0.97     | 0.95   | 1.00      | 0.91   |
-| Support Vector Machine (SVM) | 1.00     | 1.00   | 1.00      | 1.00   |
-| K-Nearest Neighbors (KNN)    | 0.93     | 0.90   | 1.00      | 0.82   |
-| Decision Tree                | 0.86     | 0.78   | 1.00      | 0.64   |
-| Random Forest                | 0.90     | 0.84   | 1.00      | 0.73   |
-| Logistic Regression          | 0.97     | 0.95   | 1.00      | 0.91   |
+| Model                        | Accuracy     | fScore     | Precision  | Recall        |
+| ---------------------------- | -----------: | ---------: | ---------: | ------------: |
+| Neural Network               | 0.965035     | 0.954128   | 0.945455   | 0.962963      |
+| Support Vector Machine (SVM) | 0.951049     | 0.936937   | 0.912281   | 0.962963      |
+| K-Nearest Neighbors (KNN)    | 0.958042     | 0.946429   | 0.913793   | 0.981481      |
+| Decision Tree                | 0.951049     | 0.934579   | 0.943396   | 0.925926      |
+| Random Forest                | 0.965035     | 0.953271   | 0.962264   | 0.944444      |
+| Logistic Regression          | 0.972028     | 0.962963   | 0.962963   | 0.962963      |
 
 Conclusion
 ==========
